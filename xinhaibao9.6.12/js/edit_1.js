@@ -910,20 +910,22 @@ $(function(){
 
                 //要将 canvas 的宽高设置成容器宽高的 2 倍
                 var canvas = document.createElement("canvas");
-                canvas.width = w * 5;
-                canvas.height = h * 5;
+                canvas.width = w * 2;
+                canvas.height = h * 2;
                 canvas.style.width = w + "px";
                 canvas.style.height = h + "px";
                 var context = canvas.getContext("2d");
                 //然后将画布缩放，将图像放大两倍画到画布上
-                context.scale(5,5);
-                console.log(canvas.width);
-                console.log(canvas.height);
-                console.log($("body").outerWidth());
+                context.scale(2,2);
+                // console.log(canvas.width);
+                // console.log(canvas.height);
+                // console.log($("body").outerWidth());
                 html2canvas($(".edit12_con"), {
                         allowTaint: true,
                         taintTest: false,
-                        width: 1280,
+                        width: 720,
+                        height:1280,
+                        canvas: canvas,
                         onrendered: function(canvas) {
                             canvas.id = "mycanvas";
                             //document.body.appendChild(canvas);

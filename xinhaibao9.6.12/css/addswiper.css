@@ -1144,12 +1144,17 @@ li{
     width: 95%;
     margin: 0px auto;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #ffffff;
     font-family: '黑体';
    /* word-spacing: 10px;
     letter-spacing: 4px;*/
     line-height: 2rem;
+}
+.edit9_con31 p{
+    font-size: 1rem;
+    color: #ffffff;
+    font-family: '黑体';
 }
 .shengcheng9{
    width: 100%;
